@@ -1,0 +1,49 @@
+{
+  "name": "dsh-plugin-lens",
+  "version": "0.1.0",
+  "description": "Overview tab and source-provenance block for the official DSH Plugins page: search, filter, categories, grouping, inline editing, batch organize and uninstall placeholders.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin-manager",
+    "plugin-center",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yerwan233/dsh-plugin-lens.git"
+  },
+  "homepage": "https://github.com/yerwan233/dsh-plugin-lens#readme",
+  "bugs": {
+    "url": "https://github.com/yerwan233/dsh-plugin-lens/issues"
+  },
+  "scripts": {},
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

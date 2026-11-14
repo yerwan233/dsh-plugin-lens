@@ -1,0 +1,6 @@
+# bundle 层 patch：把本插件的 Host 半边插入 profile 组合树。
+# 浏览器半边由 package.json 的 dsh.client 声明，Host 这行只负责占位。
+- insert:
+    - id: dsh-plugin-lens
+      name: dsh-plugin-lens
+      config: {}
